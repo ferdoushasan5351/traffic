@@ -362,6 +362,7 @@ a {
   font-size: 20px;
   font-weight: 400;
   color: #373737;
+  text-transform: capitalize;
 }
 .widget-wrap .widget ul {
   padding-top: 30px;
@@ -371,6 +372,7 @@ a {
 }
 .widget-wrap .widget ul li a {
   color: #999999;
+  text-transform: capitalize;
 }
 .widget-wrap .widget form {
   padding-top: 40px;
