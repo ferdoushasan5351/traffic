@@ -110,7 +110,7 @@ a {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: none;
+    justify-content: normal;
     cursor: pointer;
   }
   .hamburger span {
@@ -378,7 +378,7 @@ a {
   padding-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: none;
+  justify-content: normal;
   flex-flow: row wrap;
 }
 .widget-wrap .widget form input {
