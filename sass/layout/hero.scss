@@ -1,0 +1,35 @@
+.hero-wrap{
+    width: 100%;
+    background-image: url(../img/hero-bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content{
+    margin: 0 auto;
+    width: 50%;
+    padding: 140px 0;
+    h1{
+        text-align: center;
+        font-size: 32px;
+        color: $white;
+        line-height: 64px;
+    }
+    p{
+        text-align: center;
+        font-size: 22px;
+        color: $white;
+        line-height: 44px;
+    }
+}
+
+// responsive==========================================================
+
+@media only screen and (max-width: 768px){
+
+    .hero-content {
+        width: 100%;
+    }
+
+
+}

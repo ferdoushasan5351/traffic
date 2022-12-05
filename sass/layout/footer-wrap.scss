@@ -1,0 +1,135 @@
+.footer-wrap{
+    padding-top: 100px;
+}
+.widget-wrap{
+    @include flexbox(space-between);
+    flex-flow: row wrap;
+    align-items: normal;
+    .widget{
+        
+        h3{
+            font-size: 20px;
+            font-weight: 400;
+            color: $secondary;
+        }
+        ul{
+            padding-top: 30px;
+            li{
+                padding-bottom: 20px;
+                a{
+                    color: $gray;
+                }
+            }
+        }
+        form{
+            padding-top: 40px;
+            @include flexbox(none);
+            flex-flow: row wrap;
+            input{
+                width: 200px;
+                height: 45px;
+                background: $inputcolor;
+                outline: none;
+                border: none;
+                padding: 20px;
+                border-radius: 5px 0px 0px 5px;
+                &::placeholder{
+                    font-weight: 300;
+                    color: $gray;
+                }
+            }
+            button{
+                width: 100px;
+                height: 45px;
+                border: none;
+                background: $primary;
+                color: $white;
+                border-radius: 0px 5px 5px 0px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.product , .company , .help{
+    width: 20%;
+}
+.last{
+    width: 300px;
+}
+.social-widget{
+    margin-top: 40px;
+    ul{
+        @include flexbox(normal);
+        flex-flow: row wrap;
+        column-gap: 9.5%;
+        li{
+            display: inline-block;
+            &:hover a{
+                color: $primary;
+            }
+            &:hover i{
+                color: $primary;
+            }
+            a{
+                i{
+                    padding-right: 5px;
+                    color: $black;
+                    transition: 0.4s;
+                }
+                transition: 0.4s;
+            }
+        }
+        }
+    }
+.copyright{
+    margin-top: 100px;
+    height: 50px;
+    background: $copyright-bg;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    color: $gray;
+}
+
+
+// responsive==========================================================
+
+@media only screen and (max-width: 789px){
+
+    .last{
+        margin-top: 20px;
+    }
+    .footer-wrap{
+        padding-top: 50px;
+    }
+    .copyright{
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 562px){
+
+    .product , .company {
+        width: 50%;
+    }
+    .help{
+        width: 25%;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 460px){
+
+    .help{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 339px){
+    .widget-wrap .widget form button{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .copyright {
+        font-size: 12px;
+    }
+}
